@@ -212,9 +212,10 @@ STEP 6 — EMAIL DELIVERY
 After writing the report files, run this Bash command to send the email:
 
 ```bash
-cd /home/user/teamamplify && python aria/email_report.py \
-  aria/data/reports/latest_report.html \
-  aria/data/reports/latest_report.txt \
+REPO=$(git rev-parse --show-toplevel 2>/dev/null || pwd) && \
+python "$REPO/aria/email_report.py" \
+  "$REPO/aria/data/reports/latest_report.html" \
+  "$REPO/aria/data/reports/latest_report.txt" \
   "ARIA Intelligence Report — $(date '+%d %b %Y') | [X] opportunities found"
 ```
 
