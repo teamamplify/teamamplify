@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+.env.local
+
+# ARIA runtime data (run history persists; reports are ephemeral)
+aria/data/reports/
+
+# IDE
+.vscode/
+.idea/
+*.swp
