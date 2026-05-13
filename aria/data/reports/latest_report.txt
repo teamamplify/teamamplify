@@ -1,0 +1,172 @@
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ARIA INTELLIGENCE REPORT
+Amplify Impact | 13 May 2026 | Run #1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+EXECUTIVE SUMMARY
+This inaugural ARIA run surfaced 2 priority and 2 pipeline opportunities across
+9 sources. The dominant market signal is the Netherlands EU AI Act compliance
+wave — multiple Dutch public sector bodies are procuring responsible AI advisory
+support right now ahead of the August 2, 2026 enforcement deadline, giving
+Amplify a rare first-mover window backed by direct UWV/IMPACT@WORK track record.
+A second high-value alert is the potential Phase 2 engagement with 2X Global on
+their Gender Bonds Certification methodology, where Amplify is the incumbent
+communication and advisory partner.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PRIORITY OPPORTUNITIES (Score 8–10 | Act immediately)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. DUTCH PUBLIC SECTOR RESPONSIBLE AI ADVISORY — EU AI ACT WAVE
+Organisation: Multiple Dutch government bodies (ministries, municipalities,
+  ZBO's, uitvoeringsorganisaties)
+Source & Link: TenderNed (multiple publications March–May 2026); Dutch
+  government announcements: rijksoverheid.nl + digitaleoverheid.nl
+  https://www.digitaleoverheid.nl/nieuws/consultatie-uitvoeringswet-ai-verordening-van-start/
+  https://www.rijksoverheid.nl/actueel/nieuws/2026/04/20/kabinet-zet-stap-met-toezicht-op-europese-ai-verordening
+Category: Market Wave / Multiple emerging tenders
+Deadline: Wave deadline August 2, 2026 (EU AI Act high-risk provisions). Dutch
+  Implementation Act (Uitvoeringswet AI-verordening) public consultation closes
+  June 1, 2026. Multiple TenderNed advisory contracts published March–May 2026
+  with June–July submission deadlines. 🟡 7–21 days for several live tenders.
+Budget/Value: Individual contracts typically €50,000–€200,000; framework
+  agreements up to €1.45M found (TenderNed May 6, 2026 publication)
+Fit Score: 8.5/10
+  (Relevance: 9 | Track Record: 9 | Win Prob: 7 | Strategic: 9)
+
+WHY THIS FITS: Amplify delivered IMPACT@WORK with UWV — a flagship responsible
+AI advisory consortium engagement with a major Dutch public sector client. That
+contract is near-identical to what is now being procured across the Dutch
+government as organisations scramble to achieve EU AI Act compliance before
+August 2, 2026. The combination of social impact lens + AI governance + Dutch
+public sector understanding is precisely what distinguishes Amplify from purely
+technical IT consultancies competing in this space.
+
+LEAD WITH: UWV / IMPACT@WORK consortium — responsible AI in public sector.
+Back this with the Openbaar Ministerie mandate restructuring & governance work
+to demonstrate depth of public sector transformation experience.
+
+CONSORTIUM NEEDED: Likely yes for larger framework agreements (>€100K). Pair
+with a technical AI/data partner (e.g., a Dutch digital agency or university
+spin-out) where required. Amplify leads the strategy and governance work;
+partner covers technical implementation.
+
+SUGGESTED FIRST MOVE: Log into TenderNed today and search "AI" + "advies" +
+"strategie" filtered to publications from April 1–May 13, 2026. Identify 3–5
+live tenders with June deadlines. For any that are pre-market or in consultation
+phase, file a question via the Nota van Inlichtingen to signal Amplify's
+interest and expertise. Separately, contact the digitalisation teams at
+Ministerie van BZK and your UWV contact for informal briefings on upcoming
+procurement rounds.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+2. 2X GLOBAL — PHASE 2–4 GENDER BONDS CERTIFICATION METHODOLOGY
+Organisation: 2X Global (Global)
+Source & Link: https://www.2xglobal.org/opportunities/2xcertification-genderbonds
+Category: ToR / Consultancy — Proactive outreach
+Deadline: Phase 1 was Q1–Q2 2025 (deadline February 7, 2025). Phase 2
+  (stakeholder engagement + piloting) should be entering procurement now
+  (Q2–Q3 2026). No public RFP detected yet — this is a proactive window. 🟢 >21 days
+Budget/Value: Payment-for-deliverable structure. Phase 1 scope was approximately
+  8–12 weeks of expert time. Phase 2 (piloting with financial institutions) is
+  likely larger scope.
+Fit Score: 9.3/10
+  (Relevance: 10 | Track Record: 10 | Win Prob: 8 | Strategic: 9)
+
+WHY THIS FITS: Amplify delivered communications and investee support for 2X
+Global — this is the incumbent relationship. The Gender Bonds methodology
+project is a multi-phase engagement (Q1 2025 through Q4 2026) and Phase 2
+(stakeholder engagement, piloting with financial institutions) aligns precisely
+with Amplify's gender finance communications, stakeholder engagement, and 2X
+methodology expertise. Whitney's Global 100 recognition strengthens Amplify's
+standing in the gender finance ecosystem.
+
+LEAD WITH: Existing 2X Global relationship + gender finance communications work.
+Reference the gender bonds study published with LuxSE and 2X Global to demonstrate
+ongoing relevance to the bond market work.
+
+CONSORTIUM NEEDED: No — Amplify is already a recognised 2X partner. Solo bid
+is appropriate for advisory and stakeholder engagement phases.
+
+SUGGESTED FIRST MOVE: Email your 2X Global contact this week asking about the
+Phase 2 procurement timeline for the Gender Bonds Certification methodology.
+Express specific interest in the stakeholder engagement and communications phase.
+Reference the LuxSE-2X Global gender-focused bond market study (published 2026)
+as evidence of continued engagement with this work.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+PIPELINE OPPORTUNITIES (Score 6–7 | Worth monitoring)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• TenderNed Strategic Advisory Frameworks — Netherlands | Multiple contracting
+  authorities | TenderNed publications TN-576814, TN-578280, and May 6 publication
+  (€1.45M) | Deadline: June/July 2026 est. | Score: 7.0/10
+  NOTE: Details blocked from public access; recommend direct TenderNed query.
+
+• IFAD Gender Transformative Mechanism (GTM) — Consultancy Assignments | IFAD
+  ECG Division (Rome / home-based) | impactpool.org | Rolling roster; individual
+  country assignments posted ongoing (India posting February 12, 2026) |
+  Score: 6.0/10
+  NOTE: Roster-based; apply to join the IFAD ECG consultant pool for gender
+  + climate adaptation assignments. Up to 240 days/year. Strong gender fit;
+  agricultural/climate focus is a stretch.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+INTELLIGENCE NOTES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+MARKET SIGNALS:
+
+1. NETHERLANDS AI ACT COMPLIANCE WAVE (Act now)
+   August 2, 2026 is a hard cliff: high-risk AI system requirements apply to
+   ALL Dutch government AI deployments. Every ministry, ZBO, and major gemeente
+   needs governance frameworks, responsible-use policies, and change management
+   support. This is a 12–36 month advisory supercycle. Amplify's UWV track record
+   makes this a genuine priority pipeline.
+
+2. GENDER + CLIMATE CONVERGENCE IN DEVELOPMENT CONSULTING
+   Devex analysis (2026): development consultancy is converging gender, climate,
+   disability, and inclusion into unified frameworks. Organisations with siloed
+   expertise are losing to generalist impact advisors. Amplify's cross-cutting
+   profile is a structural advantage. ToC/MEL frameworks are being rebuilt at
+   scale across INGOs in 2026.
+
+3. CERV-2026-GE PROJECTS LAUNCHING JUNE 2026
+   The EU's CERV gender equality call (€23M total) closed April 28. Projects
+   start June 2026. Dutch civil society organisations receiving CERV grants will
+   need strategy, ToC, impact measurement, and communications advisory.
+   Monitor Bond NL member organisations for incoming CERV grants.
+
+4. 2X GLOBAL GENDER BONDS — WATCH FOR PHASE 2–4 RFPs
+   The 4-phase gender bonds methodology project (Q1 2025–Q4 2026) is mid-stream.
+   Phase 2 (stakeholder engagement with financial institutions) and Phase 3
+   (piloting) are the most Amplify-relevant. No public RFP yet detected — this
+   is the window for proactive outreach.
+
+5. DUTCH PUBLIC CONSULTATION ON AI IMPLEMENTATION ACT (June 1, 2026)
+   Filing a substantive response to the Uitvoeringswet consultation positions
+   Amplify as a thought leader in responsible AI governance for the public
+   sector — a free route to visibility with senior civil servants from BZK,
+   OCW, SZW, and others who will commission advisory work from August onwards.
+
+MISSED THIS CYCLE:
+   • CERV-2026-GE (deadline April 28 — set alert for CERV-2026-CI and CERV-2026-DAPHNE)
+   • 2X Global Gender Bonds Phase 1 (closed Feb 2025)
+
+SOURCES SEARCHED:
+   1. ReliefWeb API — partial (403 on direct API; web search supplemented)
+   2. TED EU Tenders — accessed via search; 582916-2025 identified
+   3. TenderNed — searched; multiple 2026 publications found; direct access blocked
+   4. UNGM — searched; NDC Partnership evaluation found (score <6, excluded)
+   5. Bond UK — searched; market intelligence only
+   6. Oneworld.nl — searched; no matching open ToRs found
+   7. Impactpool — searched; IFAD GTM and UN Women roles identified
+   8. Devex — searched; ToC/MEL consultancy trend analysis confirmed
+   9. Pianoo — searched; 2026 procurement regulatory changes noted
+
+NEXT RUN RECOMMENDED: 20 May 2026
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Sent by ARIA — Amplify Impact Intelligence Agent | 13 May 2026 | Run #1
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

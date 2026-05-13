@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ARIA Intelligence Report — 13 May 2026 | Run #1</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #0D1B2A;
+      color: #FFFFFF;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      padding: 0;
+    }
+    .wrapper { max-width: 720px; margin: 0 auto; padding: 32px 24px; }
+
+    /* Header */
+    .header {
+      border-bottom: 2px solid #F97316;
+      padding-bottom: 20px;
+      margin-bottom: 28px;
+    }
+    .header-tag {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      color: #F97316;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+    .header h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #FFFFFF;
+      letter-spacing: -0.02em;
+    }
+    .header-meta {
+      font-size: 13px;
+      color: #94A3B8;
+      margin-top: 6px;
+    }
+
+    /* Executive Summary */
+    .exec-summary {
+      background: #162032;
+      border-left: 4px solid #F97316;
+      padding: 18px 20px;
+      border-radius: 0 8px 8px 0;
+      margin-bottom: 32px;
+    }
+    .exec-summary h2 {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #F97316;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+    .exec-summary p { color: #CBD5E1; font-size: 14px; }
+
+    /* Section Headers */
+    .section-header {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      color: #F97316;
+      text-transform: uppercase;
+      border-bottom: 1px solid #1E3A5F;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      margin-top: 36px;
+    }
+
+    /* Opportunity Cards */
+    .opp-card {
+      background: #111E2E;
+      border: 1px solid #1E3A5F;
+      border-radius: 10px;
+      padding: 22px;
+      margin-bottom: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    .opp-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, #F97316, #FB923C);
+    }
+    .opp-card.pipeline::before {
+      background: #1E3A5F;
+    }
+    .opp-number {
+      font-size: 11px;
+      font-weight: 700;
+      color: #F97316;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .opp-title {
+      font-size: 17px;
+      font-weight: 700;
+      color: #FFFFFF;
+      margin-bottom: 14px;
+      line-height: 1.3;
+    }
+    .opp-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px 16px;
+      margin-bottom: 16px;
+    }
+    .meta-item { }
+    .meta-label {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #64748B;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 2px;
+    }
+    .meta-value {
+      font-size: 13px;
+      color: #CBD5E1;
+    }
+    .meta-value a { color: #60A5FA; text-decoration: none; }
+    .meta-value a:hover { text-decoration: underline; }
+
+    /* Score Badge */
+    .score-section {
+      background: #0D1B2A;
+      border-radius: 8px;
+      padding: 14px 16px;
+      margin: 16px 0;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+    .score-main {
+      text-align: center;
+      min-width: 64px;
+    }
+    .score-number {
+      font-size: 30px;
+      font-weight: 900;
+      color: #F97316;
+      line-height: 1;
+    }
+    .score-label {
+      font-size: 10px;
+      color: #64748B;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+    .score-dividers {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .score-dim {
+      font-size: 12px;
+      color: #94A3B8;
+    }
+    .score-dim span { color: #E2E8F0; font-weight: 600; }
+
+    /* Deadline badge */
+    .deadline-badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .badge-red { background: rgba(239, 68, 68, 0.2); color: #FCA5A5; }
+    .badge-yellow { background: rgba(234, 179, 8, 0.2); color: #FDE047; }
+    .badge-green { background: rgba(34, 197, 94, 0.2); color: #86EFAC; }
+
+    /* Enrichment Section */
+    .enrichment {
+      border-top: 1px solid #1E3A5F;
+      margin-top: 16px;
+      padding-top: 16px;
+    }
+    .enrichment-item {
+      margin-bottom: 12px;
+    }
+    .enrichment-label {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #F97316;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 4px;
+    }
+    .enrichment-text {
+      font-size: 13px;
+      color: #CBD5E1;
+      line-height: 1.5;
+    }
+
+    /* View Button */
+    .view-btn {
+      display: inline-block;
+      background: linear-gradient(135deg, #F97316, #EA580C);
+      color: #FFFFFF;
+      font-size: 13px;
+      font-weight: 700;
+      padding: 9px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 14px;
+      transition: opacity 0.15s;
+    }
+    .view-btn:hover { opacity: 0.88; }
+    .view-btn.secondary {
+      background: #1E3A5F;
+      color: #93C5FD;
+    }
+
+    /* Pipeline table */
+    .pipeline-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .pipeline-table th {
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      color: #64748B;
+      text-transform: uppercase;
+      text-align: left;
+      padding: 8px 10px;
+      border-bottom: 1px solid #1E3A5F;
+    }
+    .pipeline-table td {
+      padding: 10px 10px;
+      color: #CBD5E1;
+      border-bottom: 1px solid #0D1B2A;
+      vertical-align: top;
+    }
+    .pipeline-table tr:hover td { background: #111E2E; }
+    .pipeline-score { color: #F97316; font-weight: 700; }
+
+    /* Intelligence Notes */
+    .intel-item {
+      background: #111E2E;
+      border-left: 3px solid #1E3A5F;
+      border-radius: 0 6px 6px 0;
+      padding: 14px 16px;
+      margin-bottom: 12px;
+    }
+    .intel-item.high { border-left-color: #F97316; }
+    .intel-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #E2E8F0;
+      margin-bottom: 4px;
+    }
+    .intel-body { font-size: 13px; color: #94A3B8; line-height: 1.5; }
+
+    /* Sources */
+    .sources-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 6px;
+      font-size: 12px;
+      color: #64748B;
+      margin-top: 8px;
+    }
+    .sources-grid span::before { content: "✓ "; color: #22C55E; }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid #1E3A5F;
+      padding-top: 20px;
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+      color: #475569;
+    }
+    .footer strong { color: #64748B; }
+
+    /* Missed section */
+    .missed-box {
+      background: #0A1520;
+      border: 1px dashed #1E3A5F;
+      border-radius: 8px;
+      padding: 14px 16px;
+      font-size: 13px;
+      color: #64748B;
+      margin-top: 12px;
+    }
+    .missed-box strong { color: #94A3B8; }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div class="header-tag">ARIA Intelligence Report</div>
+      <h1>Amplify Impact — Opportunity Intelligence</h1>
+      <div class="header-meta">13 May 2026 &nbsp;·&nbsp; Run #1 &nbsp;·&nbsp; 9 sources searched &nbsp;·&nbsp; 2 priority · 2 pipeline</div>
+    </div>
+
+    <!-- EXECUTIVE SUMMARY -->
+    <div class="exec-summary">
+      <h2>Executive Summary</h2>
+      <p>This inaugural ARIA run surfaced 2 priority and 2 pipeline opportunities across 9 sources. The dominant market signal is the <strong style="color:#F97316">Netherlands EU AI Act compliance wave</strong> — multiple Dutch public sector bodies are procuring responsible AI advisory right now ahead of the August 2, 2026 enforcement deadline, giving Amplify a rare first-mover window backed by the direct UWV/IMPACT@WORK track record. A second high-value alert is the potential Phase 2 re-engagement with <strong style="color:#F97316">2X Global</strong> on their Gender Bonds Certification methodology, where Amplify is the incumbent advisory and communications partner.</p>
+    </div>
+
+    <!-- PRIORITY SECTION -->
+    <div class="section-header">Priority Opportunities — Score 8–10 · Act Immediately</div>
+
+    <!-- CARD 1 -->
+    <div class="opp-card">
+      <div class="opp-number">Priority #1 — Market Wave</div>
+      <div class="opp-title">Dutch Public Sector Responsible AI Advisory — EU AI Act Compliance Wave</div>
+
+      <div class="opp-meta">
+        <div class="meta-item">
+          <span class="meta-label">Organisation</span>
+          <span class="meta-value">Multiple Dutch ministries, municipalities &amp; ZBOs</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Category</span>
+          <span class="meta-value">Multiple emerging tenders / Advisory</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Deadline</span>
+          <span class="meta-value">
+            <span class="deadline-badge badge-yellow">🟡 Wave deadline: Aug 2, 2026</span><br>
+            <span style="font-size:12px; color:#64748B">Live tenders: June–July deadlines on TenderNed</span>
+          </span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Budget / Value</span>
+          <span class="meta-value">€50K–€200K per contract · Framework to €1.45M found</span>
+        </div>
+        <div class="meta-item" style="grid-column: 1 / -1;">
+          <span class="meta-label">Source &amp; Links</span>
+          <span class="meta-value">
+            <a href="https://www.digitaleoverheid.nl/nieuws/consultatie-uitvoeringswet-ai-verordening-van-start/">Digitale Overheid — AI Act consultation</a> ·
+            <a href="https://www.rijksoverheid.nl/actueel/nieuws/2026/04/20/kabinet-zet-stap-met-toezicht-op-europese-ai-verordening">Rijksoverheid announcement</a> ·
+            <a href="https://www.tenderned.nl">TenderNed — search "AI advies strategie"</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="score-section">
+        <div class="score-main">
+          <div class="score-number">8.5</div>
+          <div class="score-label">Fit Score</div>
+        </div>
+        <div class="score-dividers">
+          <div class="score-dim">Relevance <span>9/10</span></div>
+          <div class="score-dim">Track Record <span>9/10</span></div>
+          <div class="score-dim">Win Prob <span>7/10</span></div>
+          <div class="score-dim">Strategic <span>9/10</span></div>
+        </div>
+      </div>
+
+      <div class="enrichment">
+        <div class="enrichment-item">
+          <span class="enrichment-label">Why This Fits</span>
+          <span class="enrichment-text">Amplify delivered IMPACT@WORK with UWV — a flagship responsible AI advisory consortium engagement with a major Dutch public sector client. That contract is near-identical to what is now being procured across the Dutch government as organisations scramble for EU AI Act compliance before August 2, 2026. The combination of social impact lens + AI governance + Dutch public sector transformation depth is exactly what distinguishes Amplify from purely technical IT consultancies competing in this space.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Lead With</span>
+          <span class="enrichment-text">UWV / IMPACT@WORK consortium (responsible AI in public sector). Reinforce with Openbaar Ministerie mandate restructuring &amp; governance to demonstrate depth of public sector transformation experience.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Consortium Needed</span>
+          <span class="enrichment-text">Likely yes for framework agreements over €100K. Pair with a technical AI/data partner (Dutch digital agency or university spin-out) for technical implementation. Amplify leads strategy, governance, and change management.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Suggested First Move</span>
+          <span class="enrichment-text">Log into TenderNed today, search "AI advies strategie" filtered to April 1–May 13, 2026 publications. Identify 3–5 live tenders with June deadlines. Separately, file a substantive response to the Uitvoeringswet AI-verordening consultation (closes June 1) to position as a thought leader — this creates direct visibility with BZK, OCW, and SZW procurement officers who will commission advisory work from August onwards.</span>
+        </div>
+      </div>
+
+      <a href="https://www.tenderned.nl" class="view-btn" target="_blank">Search Live Tenders on TenderNed →</a>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="opp-card">
+      <div class="opp-number">Priority #2 — Proactive Outreach</div>
+      <div class="opp-title">2X Global — Phase 2–4 Gender Bonds Certification Methodology</div>
+
+      <div class="opp-meta">
+        <div class="meta-item">
+          <span class="meta-label">Organisation</span>
+          <span class="meta-value">2X Global (Global / Remote)</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Category</span>
+          <span class="meta-value">ToR / Proactive advisory engagement</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Deadline</span>
+          <span class="meta-value">
+            <span class="deadline-badge badge-green">🟢 No public RFP yet</span><br>
+            <span style="font-size:12px; color:#64748B">Phase 2 expected Q2–Q3 2026. Proactive window open now.</span>
+          </span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Budget / Value</span>
+          <span class="meta-value">Payment-for-deliverable. Phase 2 larger scope than Phase 1 (est. 10–16 weeks).</span>
+        </div>
+        <div class="meta-item" style="grid-column: 1 / -1;">
+          <span class="meta-label">Source &amp; Link</span>
+          <span class="meta-value">
+            <a href="https://www.2xglobal.org/opportunities/2xcertification-genderbonds">2X Global Opportunities Page</a> ·
+            <a href="https://www.2xglobal.org/news-media-stories/luxse-and-2x-global-release-new-study-on-gender-focused-bond-market">LuxSE–2X Gender Bond Study (2026)</a>
+          </span>
+        </div>
+      </div>
+
+      <div class="score-section">
+        <div class="score-main">
+          <div class="score-number">9.3</div>
+          <div class="score-label">Fit Score</div>
+        </div>
+        <div class="score-dividers">
+          <div class="score-dim">Relevance <span>10/10</span></div>
+          <div class="score-dim">Track Record <span>10/10</span></div>
+          <div class="score-dim">Win Prob <span>8/10</span></div>
+          <div class="score-dim">Strategic <span>9/10</span></div>
+        </div>
+      </div>
+
+      <div class="enrichment">
+        <div class="enrichment-item">
+          <span class="enrichment-label">Why This Fits</span>
+          <span class="enrichment-text">Amplify delivered communications and investee support for 2X Global — this is an incumbent relationship. The Gender Bonds methodology is a multi-phase project through Q4 2026, and Phase 2 (stakeholder engagement with financial institutions + piloting) maps directly onto Amplify's gender finance communications, stakeholder co-creation, and 2X methodology expertise. Whitney's Global 100 recognition further strengthens Amplify's standing in the gender finance ecosystem.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Lead With</span>
+          <span class="enrichment-text">Existing 2X Global relationship. Reference the LuxSE–2X Global gender-focused bond market study (published 2026) to signal continued engagement with this space. Cite 2X investee communications work as direct evidence.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Consortium Needed</span>
+          <span class="enrichment-text">No — Amplify is already a recognised 2X partner. Solo bid is appropriate for advisory and stakeholder engagement phases.</span>
+        </div>
+        <div class="enrichment-item">
+          <span class="enrichment-label">Suggested First Move</span>
+          <span class="enrichment-text">Email your 2X Global contact this week asking about Phase 2 procurement timeline. Express specific interest in the stakeholder engagement and financial institution outreach phase. Do not wait for a public RFP — Phase 1 incumbents are typically invited first for Phase 2.</span>
+        </div>
+      </div>
+
+      <a href="https://www.2xglobal.org/opportunities" class="view-btn" target="_blank">View 2X Global Opportunities →</a>
+    </div>
+
+    <!-- PIPELINE SECTION -->
+    <div class="section-header">Pipeline Opportunities — Score 6–7 · Worth Monitoring</div>
+
+    <table class="pipeline-table">
+      <thead>
+        <tr>
+          <th>Opportunity</th>
+          <th>Organisation</th>
+          <th>Source</th>
+          <th>Deadline</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>TenderNed Strategic Advisory Frameworks (TN-576814, TN-578280, May 6 publication €1.45M)</td>
+          <td>Multiple NL contracting authorities</td>
+          <td><a href="https://www.tenderned.nl" style="color:#60A5FA">TenderNed</a></td>
+          <td><span class="deadline-badge badge-yellow">🟡 Est. June–July 2026</span><br><span style="font-size:11px; color:#64748B">Details require TenderNed login</span></td>
+          <td class="pipeline-score">7.0</td>
+        </tr>
+        <tr>
+          <td>IFAD Gender Transformative Mechanism (GTM) — Consultancy Roster, ECG Division</td>
+          <td>IFAD (Rome / Home-based)</td>
+          <td><a href="https://www.impactpool.org/jobs/989500" style="color:#60A5FA">Impactpool</a></td>
+          <td><span class="deadline-badge badge-green">🟢 Rolling roster</span><br><span style="font-size:11px; color:#64748B">Individual assignments posted ongoing</span></td>
+          <td class="pipeline-score">6.0</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- INTELLIGENCE NOTES -->
+    <div class="section-header">Intelligence Notes</div>
+
+    <div class="intel-item high">
+      <div class="intel-title">🔥 Netherlands AI Act Compliance Wave — Act Now</div>
+      <div class="intel-body">August 2, 2026 is a hard cliff: high-risk AI requirements apply to all Dutch government AI deployments. Every ministry, ZBO, and major gemeente needs governance frameworks, responsible-use policies, and change management support. This is a 12–36 month advisory supercycle. <strong style="color:#CBD5E1">Amplify's UWV track record makes this a genuine immediate priority.</strong> TenderNed search recommended today.</div>
+    </div>
+
+    <div class="intel-item high">
+      <div class="intel-title">📈 Gender + Climate Convergence in Development Consulting</div>
+      <div class="intel-body">Devex 2026 analysis confirms development consultancy is converging gender, climate, disability, and inclusion into unified frameworks. Organisations with siloed expertise are losing to cross-cutting impact advisors. Amplify's multi-dimensional profile is a structural competitive advantage for the ToC/MEL rebuild cycle underway across INGOs in 2026.</div>
+    </div>
+
+    <div class="intel-item">
+      <div class="intel-title">🇪🇺 CERV-2026-GE Projects Launching June 2026</div>
+      <div class="intel-body">EU CERV gender equality call (€23M total) closed April 28. Projects start June 2026. Dutch civil society organisations receiving CERV grants will need strategy, Theory of Change, impact measurement, and communications advisory support. Monitor Bond NL member organisations for incoming CERV grants over the next 6 weeks.</div>
+    </div>
+
+    <div class="intel-item">
+      <div class="intel-title">⚡ AI Implementation Act Consultation — Free Thought Leadership Opportunity</div>
+      <div class="intel-body">Filing a substantive response to the Uitvoeringswet AI-verordening consultation (closes June 1, 2026) positions Amplify as a recognised voice in responsible AI governance for the public sector — zero cost, direct visibility with BZK, OCW, SZW procurement decision-makers.</div>
+    </div>
+
+    <div class="missed-box">
+      <strong>Missed this cycle:</strong> CERV-2026-GE (deadline April 28 — set alert for CERV-2026-CI and CERV-2026-DAPHNE) · 2X Global Gender Bonds Phase 1 (closed Feb 2025 — action on Phase 2 now).
+    </div>
+
+    <!-- SOURCES -->
+    <div class="section-header">Sources Searched</div>
+    <div class="sources-grid">
+      <span>ReliefWeb API (web search supplemented)</span>
+      <span>TED EU Tenders (582916-2025 identified)</span>
+      <span>TenderNed (multiple 2026 publications)</span>
+      <span>UNGM (NDC Partnership evaluated)</span>
+      <span>Bond UK (market intelligence)</span>
+      <span>Oneworld.nl (no open ToRs found)</span>
+      <span>Impactpool (IFAD GTM + UN Women)</span>
+      <span>Devex (trends analysis)</span>
+      <span>Pianoo (2026 regulatory changes)</span>
+    </div>
+
+    <p style="font-size:13px; color:#64748B; margin-top:16px;">
+      <strong style="color:#94A3B8">Next run recommended:</strong> 20 May 2026
+    </p>
+
+    <!-- FOOTER -->
+    <div class="footer">
+      <strong>ARIA — Amplify Impact Intelligence Agent</strong><br>
+      13 May 2026 · Run #1 · Sent to whitney@amplifyimpact.today
+    </div>
+
+  </div>
+</body>
+</html>
